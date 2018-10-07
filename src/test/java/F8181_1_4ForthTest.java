@@ -32,7 +32,7 @@ public class F8181_1_4ForthTest {
 //        profile.setPreference("network.proxy.socks", "gproxy.corp.amdocs.com");
 //        profile.setPreference("network.proxy.socks_port", 8080);
         //driver = new FirefoxDriver();
-    }
+    //}
 
 //    @AfterClass
 //    public static void afterClass() {
