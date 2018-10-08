@@ -21,13 +21,13 @@ public class F8181_1_1FirstTest {
 
     @BeforeClass
     public static void beforeClass() {
-        FirefoxProfile profile = new FirefoxProfile();
-        String PROXY = "gproxy.corp.amdocs.com:8080";
-        org.openqa.selenium.Proxy proxy = new org.openqa.selenium.Proxy();
-        proxy.setHttpProxy(PROXY).setFtpProxy(PROXY).setSslProxy(PROXY);
-        DesiredCapabilities cap = new DesiredCapabilities();
-        cap.setCapability(CapabilityType.PROXY, proxy);
-        driver = new FirefoxDriver(cap);
+//        FirefoxProfile profile = new FirefoxProfile();
+//        String PROXY = "gproxy.corp.amdocs.com:8080";
+//        org.openqa.selenium.Proxy proxy = new org.openqa.selenium.Proxy();
+//        proxy.setHttpProxy(PROXY).setFtpProxy(PROXY).setSslProxy(PROXY);
+//        DesiredCapabilities cap = new DesiredCapabilities();
+//        cap.setCapability(CapabilityType.PROXY, proxy);
+//        driver = new FirefoxDriver(cap);
 //
 //        profile.setPreference("network.proxy.type", 1);
 //        profile.setPreference("network.proxy.socks", "gproxy.corp.amdocs.com");
