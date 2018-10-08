@@ -1,0 +1,37 @@
+plugins {
+    id 'java'
+    
+}
+
+group 'amdocs.com'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+	//jcenter()
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    testCompile group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '3.14.0'
+    testCompile "org.testng:testng:6.3.1"
+
+}
+ext{
+
+    //set suiteFile, default is 'testrun_config.xml'
+    if (!project.hasProperty('suiteFile')) {
+        //suiteFile = 'testrun_config.xml'
+        suiteFile = 'testng.xml'
+    }
+}
+//cmd gradlew test -PsuiteFile=testng.xml/testng2.xml
+test {
+    dependsOn 'cleanTest'
+    useTestNG() {
+            suites "/src/test/resources/"+suiteFile
+
+    }
+}

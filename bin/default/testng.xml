@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite1" parallel="classes" >
+    <test name="test" >
+        <classes>
+            <class name="F8181_1_1FirstTest" />
+            <class name="F8181_1_2SecondTest" /><class name="F8181_1_3ThirdTest"></class>
+        </classes>
+    </test>
+</suite>
