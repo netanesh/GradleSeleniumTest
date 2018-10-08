@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<suite name="Suite2" parallel="classes">
-    <test name="test" >
-        <classes>
-            <class name="ThirdTest" />
-        </classes>
-    </test>
-</suite>
